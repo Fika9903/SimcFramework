@@ -18,52 +18,24 @@ To get started with the SIMC Framework, clone this repository to your local mach
 
 List any prerequisites that are needed to run the simulation framework. For example:
 
-- SimulationCraft installed and accessible via command line
+- SimulationCraft compiled and placed inside of the empty /Simc folder
 - Python 3.6 or higher
-- Any other dependencies
 
 ### Installation
 
 Provide step-by-step instructions on how to install and run your framework. For example:
 
 1. Navigate to the `app` directory within the cloned repository.
-2. Run `python setup.py install` to install the necessary Python dependencies.
-3. Execute `simc_interface.py` to start the simulation interface.
+2. Run "pip install -r requirements.txt" to install all requirements
+3. Execute `app.py` to start the simulation interface.
 
 ## Usage
 
-Guide users on how to use the framework, including how to enter data, how to run simulations, and how to interpret results.
-
-### Running a Simulation
-
-Provide an example of how to run a simulation. For instance:
-
-
-### Interpreting Results
-
-Explain what the output files contain and how to make sense of the data presented.
-
-## Contributing
-
-If you're interested in contributing to the SIMC Framework, please read through our contributing guidelines. We welcome pull requests and issue reports.
-
-## Support
-
-For support, please open an issue on the GitHub repository, and we'll assist you as soon as possible.
+- **1**: Start the app.py by running the script in vs code or console.
+- **2**: Go to the site and enter a valid Simc Input string. These can be made manually or copied from Raidbots.com's simulation tools
+- **3**: Immediate console output and status updates.
+- **4**: Generates HTML results that can be viewed in any modern browser.
 
 ## Authors
 
-- **Your Name** - *Initial work* - [YourUsername](https://github.com/YourUsername)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE.md) - see the LICENSE.md file for details.
-
-## Acknowledgments
-
-- Thanks to the SimulationCraft team for providing the backend engine for simulations.
-- Shoutout to anyone whose code was used as inspiration or direct assistance in this project.
-
-## Contact
-
-If you have any questions, please feel free to contact
+- Filip Karlsson Dahlgren - [YourUsername](https://github.com/Fika9903)

@@ -1,0 +1,75 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Courier New', monospace; /* This font is more in line with the Matrix aesthetic */
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    background: #1b1b1b; /* A dark background, reminiscent of the Matrix */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow this to take up available space */
+    padding: 10px; /* This adds padding around the entire container */
+    box-sizing: border-box; /* Include padding in the container's width and height */
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background: #262626; /* A dark shade for the input group */
+    padding: 10px; /* Adds padding inside the input group */
+    border-radius: 5px; /* Rounds the corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* A darker shadow for depth */
+}
+
+#simc-data {
+    flex-grow: 1;
+    margin-right: 10px;
+    height: 150px; /* You can adjust the height as you like */
+    color: #0F0; /* The iconic green text */
+    background: #000; /* A black background for contrast */
+    border: none; /* Optional: Removes the border for a sleek look */
+    padding: 8px; /* Add some padding inside the textarea */
+}
+
+#update-button {
+    padding: 10px 20px;
+    background: #0F0; /* Green button to fit the Matrix theme */
+    border: none; /* Optional: Removes the border */
+    color: #000; /* Text color for the button */
+    font-weight: bold; /* Makes the text a bit bolder */
+}
+
+#console-container {
+    flex-grow: 1;
+    overflow: auto;
+    background: #333; /* A very dark grey, almost black, for the console */
+    border: 1px solid #414141; /* A dark border to blend in */
+    padding: 10px;
+    margin-bottom: 10px; /* Give some space from the status box */
+    border-radius: 5px; /* Rounds the corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* A darker shadow */
+}
+
+#output {
+    white-space: pre-wrap;
+    color: #0F0; /* The iconic green text */
+}
+
+#status {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111; /* Dark background for the status bar */
+    color: #0F0; /* The iconic green text */
+    border-top: 1px solid #313131; /* A dark border top */
+    padding: 10px;
+    box-sizing: border-box;
+    max-height: 50%;
+    overflow: auto;
+}

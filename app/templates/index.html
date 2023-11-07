@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SIMC Script Runner</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/scripts.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <textarea id="simc-data" placeholder="Enter your .simc content here..."></textarea>
+            <button id="update-button">Update SIM</button>
+        </div>
+        <div id="console-container">
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <div id="status"></div>
+</body>
+</html>

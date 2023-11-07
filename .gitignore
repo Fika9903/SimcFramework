@@ -1,0 +1,3 @@
+app/simulations/inputs/*.simc
+app/simulations/outputs/*.html
+x64-Debug/*

@@ -76,7 +76,7 @@ def handle_update_simc(data):
 
     # Now define the paths relative to the base_directory
     simc_file_path = os.path.join(base_directory, 'app', 'simulations', 'inputs', 'john.simc')
-    executable_path = os.path.join(base_directory, 'x64-Debug', 'simc.exe')
+    executable_path = os.path.join(base_directory, 'Simc', 'simc.exe')
     output_directory = os.path.join(base_directory, 'app', 'simulations', 'outputs')
 
     print(simc_file_path)

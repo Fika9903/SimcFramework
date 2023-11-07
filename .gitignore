@@ -1,3 +1,4 @@
 app/simulations/inputs/*.simc
 app/simulations/outputs/*.html
 Simc/*
+!Simc/.gitkeep

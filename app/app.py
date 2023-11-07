@@ -92,4 +92,4 @@ def handle_update_simc(data):
         socketio.emit('status', {'data': 'Error: Failed to update SIMC file.'}, to=sid)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    socketio.run(app, debug=False)

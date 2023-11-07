@@ -7,7 +7,7 @@ Welcome to the SIMC Framework repository! This framework provides a robust platf
 - **Ease of Use**: A user-friendly interface for inputting simulation data.
 - **Flexibility**: Ability to run custom simulations with varying parameters.
 - **Real-time Feedback**: Immediate console output and status updates.
-- **Custom Outputs**: Generates HTML results that can be viewed in any modern browser.
+- **Custom Outputs**: The resulting HTML file automatically opens in another tab when the simulation is finished
 
 ## Getting Started
 

@@ -11,10 +11,6 @@ Welcome to the SIMC Framework repository! This framework provides a robust platf
 
 ![Alt text for your image](app/images/Screenshot.png)
 
-## Getting Started
-
-To get started with the SIMC Framework, clone this repository to your local machine using the following command:
-
 
 ### Prerequisites
 

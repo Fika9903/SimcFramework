@@ -9,7 +9,7 @@ Welcome to the SIMC Framework repository! This framework provides a robust platf
 - **Real-time Feedback**: Immediate console output and status updates.
 - **Custom Outputs**: The resulting HTML file automatically opens in another tab when the simulation is finished
 - 
-![Alt text for your image](images/screenshot.png)
+![Alt text for your image](app/images/screenshot.png)
 
 ## Getting Started
 

@@ -28,6 +28,7 @@ Provide step-by-step instructions on how to install and run your framework. For 
 1. Navigate to the `app` directory within the cloned repository.
 2. Run "pip install -r requirements.txt" to install all requirements
 3. Execute `app.py` to start the simulation interface.
+4. Place your compiled simc project inside of the simc directory
 
 ## Usage
 

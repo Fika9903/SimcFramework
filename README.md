@@ -23,10 +23,10 @@ List any prerequisites that are needed to run the simulation framework. For exam
 
 Provide step-by-step instructions on how to install and run your framework. For example:
 
-1. Navigate to the `app` directory within the cloned repository.
+1. Place your compiled simc project inside of the simc directory
 2. Run "pip install -r requirements.txt" to install all requirements
-3. Execute `app.py` to start the simulation interface.
-4. Place your compiled simc project inside of the simc directory
+3. Navigate to the `app` directory within the cloned repository.
+4. Execute `app.py` to start the simulation interface.
 
 ## Usage
 

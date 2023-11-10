@@ -16,7 +16,7 @@ Welcome to the SIMC Framework repository! This framework provides a robust platf
 
 List any prerequisites that are needed to run the simulation framework. For example:
 
-- SimulationCraft compiled and placed inside of the empty /Simc folder
+- [Simulationcraft](https://github.com/simulationcraft/simc) compiled and placed inside of the empty /Simc folder
 - Python 3.6 or higher
 
 ### Installation

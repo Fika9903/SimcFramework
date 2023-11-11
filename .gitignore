@@ -1,6 +1,6 @@
 app/simulations/inputs/*.simc
 app/simulations/outputs/*.html
-!app/simulations/outputs
-!app/simulations/inputs
+!app/simulations/outputs/.gitkeep
+!app/simulations/inputs/.gitkeep
 Simc/*
 !Simc/.gitkeep

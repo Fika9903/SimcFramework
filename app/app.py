@@ -10,16 +10,47 @@ app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 
 
+import os
+
 def update_simc_file(content, simc_file_path, output_directory):
-    # Construct the HTML file path line
+    lines = content.split('\n')
+
+    start_index = next(i for i, line in enumerate(lines) if "# Actors" in line)
+    end_index = next(i for i, line in enumerate(lines) if "# Simulation Options" in line)
+
+    i = start_index + 1
+    while i < end_index:
+        line = lines[i].strip()
+        if line.startswith("#"):
+            comment_content = line.split('#')[1].strip()
+            i += 1
+            if i < end_index:
+                next_line = lines[i]
+                parts = next_line.split('"')
+                if len(parts) > 1:
+                    # Extracting the last part after the last '/'
+                    last_part = parts[1].rsplit('/', 1)[-1]
+                    if last_part and not last_part.endswith('+'):
+                        last_part = '/' + last_part  # Prepend '/' if last part exists and not ending with '+'
+                    parts[1] = comment_content + last_part
+                    lines[i] = '"'.join(parts)
+        else:
+            i += 1
+
+    modified_content = '\n'.join(lines)
+
+    # Append additional lines for output formats
     html_line = f'html={os.path.join(output_directory, "results.html")}\n'
-    
-    # Append the HTML line to the content
-    updated_content = content + '\n' + html_line
-    
-    # Write the updated content back to the .simc file
+    log_line = f'output={os.path.join(output_directory, "log.txt")}\n'
+    json_line = f'json2={os.path.join(output_directory, "report.json")}\n'
+    hosted_html_line = 'hosted_html=1\n'
+    report_details_line = 'report_details=0\n'
+    report_precision_line = 'report_precision=2\n'
+    log_line = 'log=1\n'
+    additional_content = html_line + log_line + json_line + hosted_html_line + report_details_line + report_precision_line + log_line
+
     with open(simc_file_path, 'w') as file:
-        file.write(updated_content)
+        file.write(modified_content + '\n' + additional_content)
 
     return True
 
